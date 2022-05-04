@@ -1,0 +1,15 @@
+@keyframes floating{
+  50%{
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes text {
+  0%{
+    margin-bottom: -165px;
+  }
+  85%{
+    margin-bottom: 0px;
+  }
+
+}

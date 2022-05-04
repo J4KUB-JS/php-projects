@@ -1,0 +1,82 @@
+.logo a{
+  text-decoration: none;
+  color: white;
+}
+.login a{
+  text-decoration: none;
+  color: white;
+}
+.logo{
+  float: left;
+  font-size: 30px;
+  font-weight: bolder;
+  border-bottom: solid 3px #16A478;
+  transition: 0.5s;
+
+}
+.logo a:hover{
+  color: #16A478;
+}
+.login{
+  float: right;
+  font-size: 25px;
+  padding-top: 15px;
+  transition: 0.5s;
+}
+.login a:hover{
+  color: #16A478;
+}
+.content1{
+  padding-top: 20%;
+}
+.content1 h2{
+  font-size: 80px;
+  letter-spacing: 5px;
+  position: relative;
+  animation: text 1s 1;
+  background-color: #171717;
+}
+.content1 p{
+  margin-top: 10px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+button{
+  font-size: 30px;
+  margin-top: 25px;
+  width: 200px;
+  padding: 12px 10px;
+  color: white;
+  background-color: #16A478;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+button{
+  margin-top: 25px;
+  width: 190px;
+  border: 0;
+  padding: 10px 10px 10px 10px;
+  outline: none;
+  color: white;
+  background-color: #16A478;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: width 0.5s;
+}
+button:hover{
+  width: 250px;
+  align-items: center;
+  justify-content:space-between;
+}
+button a{
+  text-decoration: none;
+  color: white;
+}
+.footer1{
+  text-align: center;
+  font-size: 15px;
+  font-weight: lighter;
+  border-top: solid 1px #707070;
+}

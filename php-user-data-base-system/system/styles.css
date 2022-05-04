@@ -1,0 +1,158 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #171717;
+  width: 100%;
+  min-height:50vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+  width: 98%;
+  margin: auto;
+}
+.navbar{
+  width: 100%;
+  margin-top: 10px;
+}
+.logo{
+  display: inline-block;
+  width: 73%;
+  font-size: 40px;
+  color: #10D987;
+  cursor: pointer;
+}
+.user{
+  display: inline-block;
+  width: 20%;
+  font-size: 25px;
+  text-align: right;
+  padding-right: 10px;
+}
+.setings{
+  color: #10D987;
+  display: inline-block;
+  width: 5%;
+  font-size: 25px;
+  cursor: pointer;
+}
+.menubar{
+  float: left;
+  margin-top: 40px;
+  width: 15%;
+}
+.menu{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 23px;
+}
+i{
+  padding-right: 15px;
+}
+.icon{
+  padding-top: 10px;
+}
+.iconl{
+  padding-top: 50px;
+  color: #FF4141;
+}
+.content{
+  width: 77%;
+  margin-left: 70px;
+  float: left;
+}
+.contentbarT{
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #10D987;
+  margin-top: 50px;
+  border: none;
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+}
+.add{
+  font-size: 25px;
+}
+.contentbarB{
+  width: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 0px 0px 20px 20px;
+  color: #646464;
+  font-size: 20px;
+}
+.data{
+  margin-top:5px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.datacontFN{
+  display: inline-block;
+  margin-left: 20px;
+}
+.datacontID{
+  display: inline-block;
+  margin-left: 20px;
+}
+.datacontJ{
+  display: inline-block;
+  margin-left: 20px;
+}
+.datacontM{
+  display: inline-block;
+  margin-left: 20px;
+}
+.datacontN{
+  display: inline-block;
+  margin-left: 20px;
+}
+.edit{
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+  background-color:#48D3FF;
+  border-radius:50px;
+  padding-left: 5px;
+  margin-left: 20px;
+}
+.delete{
+  display: inline-block;
+  color: white;
+  background-color:#FF4141;
+  font-size: 25px;
+  border-radius:50px;
+  padding-left: 5px;
+  margin-left: 20px;
+}
+.cursor1{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+.cursor2{
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #c6c6c6;
+  border-radius: 50%;
+  background-color: #c6c6c6;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}

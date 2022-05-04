@@ -1,0 +1,496 @@
+*{
+  padding: 0;
+  margin: 0;
+
+}
+body{
+  background-color: #171717;
+  width: 100%;
+  min-height:100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
+.header {
+  grid-area: header;
+}
+.logo a{
+  text-decoration: none;
+  color: white;
+}
+.login a{
+  text-decoration: none;
+  color: white;
+}
+.logo{
+  float: left;
+  font-size: 30px;
+  font-weight: bolder;
+  border-bottom: solid 3px #16A478;
+  transition: 0.5s;
+
+}
+.logo a:hover{
+  color: #16A478;
+}
+.login{
+  float: right;
+  font-size: 25px;
+  padding-top: 15px;
+  transition: 0.5s;
+}
+.login a:hover{
+  color: #16A478;
+}
+.content1{
+  width: 100%;
+  padding-top: 10%;
+}
+.content1 h2{
+  font-size: 30px;
+  position: relative;
+  background-color: #171717;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: text 2s 1;
+}
+.content1 p{
+  margin-top: 10px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  animation: hide 2s 1;
+}
+@keyframes text {
+  0%{
+      color: white;
+  }
+  20%{
+    color: red;
+  }
+  40%{
+    color: white;
+  }
+  60%{
+    color: red;
+  }
+  80%{
+    color: white;
+  }
+  100%{
+    color: red;
+  }
+
+}
+
+/*
+@keyframes hide {
+  0%{
+    visibility: hidden;
+  }
+  60%{
+    visibility: hidden;
+  }
+}
+*/
+.loginS{
+  margin: auto;
+  width: 60%;
+  background-color: #171717;
+  height: 360px;
+  text-align: center;
+  animation: loginsystem 1s 1;
+  border: solid 3px #16A478;
+}
+/*
+@keyframes loginsystem {
+  0%{
+    height: 0px;
+  }
+  100%{
+    height:360px;
+  }
+}
+*/
+button{
+  font-size: 30px;
+  margin-top: 25px;
+  width: 190px;
+  border: none;
+  padding: 5px 5px 5px 5px;
+  outline: none;
+  color: white;
+  background-color: #16A478;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: width 0.5s;
+  animation: hide 2s 1;
+}
+button:hover{
+  width: 250px;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.loginS h3{
+  font-size: 20px;
+  margin-top: 10px;
+  animation: hide 2s 1;
+}
+button input {
+font-size: 20px;
+color: white;
+background-color: #16A478;
+border: none;
+}
+input{
+  animation: hide 2s 1;
+  height: 30px;
+  font-size: 20px;
+}
+.cursor1{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+.cursor2{
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #c6c6c6;
+  border-radius: 50%;
+  background-color: #c6c6c6;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.footer1{
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+  border-top: solid 1px #707070;
+}
+.content {
+  grid-area: advert;
+}
+
+/* ----- Ghost Part below -----*/
+
+.ghost-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: content;
+}
+.ghost{
+  width: 140px;
+  height: 160px;
+  background-color: #f2f2f2;
+  border-radius: 70px 70px 0 0;
+  position: relative;
+  cursor: pointer;
+  animation: floating 7s infinite ease-in-out;
+}
+.face{
+  width: 100px;
+  position: absolute;
+  top: 60px;
+  left: calc(50% - 50px);
+}
+.eye{
+  height: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.eye span{
+  width: 24px;
+  height: 24px;
+  background-color: #2c3a47;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+.ghost:hover .eye span{
+  height: 16px;
+}
+.mouth{
+  width: 40px;
+  height: 20px;
+  background-color: #2c3a47;
+  margin: auto;
+  border-radius: 0 0 20px 20px;
+  transition: 0.3s linear;
+}
+.ghost:hover .mouth{
+  height: 12px;
+}
+.hands{
+  width: 180px;
+  position: absolute;
+  left: -20px;
+  top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.hands span{
+  width: 20px;
+  height: 30px;
+  background-color: #f2f2f2;
+}
+.hands span:first-child{
+  border-radius: 20px 0 0 20px;
+}
+.hands span:last-child{
+  border-radius: 0  20px 20px 0;
+}
+.feet{
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  display: flex;
+}
+.feet span{
+  flex: 1;
+  height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 0 0 20px 20px;
+}
+.feet span:first-child{
+  border-radius:  0 0 20px 12px;
+
+}
+.feet span:last-child{
+  border-radius:  0 0 12px 20px;
+
+}
+/*----- Ghost2 -----*/
+
+.ghost-con1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: content;
+}
+.ghost1{
+  margin-left: 35px;
+  width: 140px;
+  height: 160px;
+  background-color: #16A478;
+  border-radius: 70px 70px 0 0;
+  position: relative;
+  cursor: pointer;
+  animation: floating 7s infinite ease-in-out;
+}
+@keyframes floating{
+  50%{
+    transform: translateX(-200px);
+  }
+}
+.face1{
+  width: 100px;
+  position: absolute;
+  top: 60px;
+  left: calc(50% - 50px);
+}
+.eye1{
+  height: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.eye1 span{
+  width: 24px;
+  height: 24px;
+  background-color: #2c3a47;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+.ghost1:hover .eye1 span{
+  height: 16px;
+}
+.mouth1{
+  width: 40px;
+  height: 20px;
+  background-color: #2c3a47;
+  margin: auto;
+  border-radius: 0 0 20px 20px;
+  transition: 0.3s linear;
+}
+.ghost1:hover .mouth1{
+  height: 12px;
+}
+.hands1{
+  width: 180px;
+  position: absolute;
+  left: -20px;
+  top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.hands1 span{
+  width: 20px;
+  height: 30px;
+  background-color: #16A478;
+}
+.hands1 span:first-child{
+  border-radius: 20px 0 0 20px;
+}
+.hands1 span:last-child{
+  border-radius: 0  20px 20px 0;
+}
+.feet1{
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  display: flex;
+}
+.feet1 span{
+  flex: 1;
+  height: 20px;
+  background-color: #16A478;
+  border-radius: 0 0 20px 20px;
+}
+.feet1 span:first-child{
+  border-radius:  0 0 20px 12px;
+
+}
+.feet1 span:last-child{
+  border-radius:  0 0 12px 20px;
+
+}
+
+/* ----- Ghost Part above -----*/
+.footer {
+  grid-area: footer;
+}
+
+.container {
+  font-size: 1.5em;
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 40px auto 40px;
+  grid-template-areas:
+    "header header"
+    "advert content"
+    "footer footer";
+}
+
+@media (max-width: 1350px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 30% 55% 2%;
+    grid-template-areas:
+      "header"
+      "content"
+      "advert"
+      "footer";
+  }
+
+  .login{
+    padding-top: 7px;
+  }
+  .content1 h2{
+    font-size: 10px;
+    position: relative;
+    background-color: #171717;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  h2{
+    font-size: 20px;
+  }
+
+  button{
+    font-size: 30px;
+    width: 180px;
+  }
+  button:hover{
+    width: 230px;
+
+  }
+
+  .content1{
+    padding-top: 0%;
+    width: 100%;
+  }
+  .content1 h2{
+    font-size: 25px;
+    letter-spacing: 5px;
+    position: relative;
+    animation: text 2s 1;
+  }
+  .content1 p{
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+
+  @keyframes text {
+    0%{
+        color: white;
+    }
+    20%{
+      color: red;
+    }
+    40%{
+      color: white;
+    }
+    60%{
+      color: red;
+    }
+    80%{
+      color: white;
+    }
+    100%{
+      color: red;
+    }
+
+  }
+
+  .loginS{
+    margin: auto;
+    width: 70%;
+    background-color: #171717;
+    height: 320px;
+    text-align: center;
+    animation: loginsystem 2s 1;
+    border: solid 3px #16A478;
+  }
+  .footer1{
+    font-size: 15px;
+  }
+
+  .ghost-con{
+    margin: auto;
+  }
+  .ghost{
+    animation: floating 5s infinite ease-in-out;
+  }
+  .ghost1{
+    animation: floating 5s infinite ease-in-out;
+  }
+  @keyframes floating{
+    0%{
+      transform: translateX(-70px);
+    }
+    50%{
+      transform: translateX(70px);
+    }
+    100%{
+      transform: translateX(-70px);
+    }
+  }
+}
